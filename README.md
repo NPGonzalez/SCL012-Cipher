@@ -64,9 +64,9 @@ A medida que se pudo establecer una mejor comunicación con el interlocutor, se 
 
 También, se realizaron búsquedas en Internet con el fin de revisar algunas de las aplicaciones web de codificado/decodificado existentes y sus características.
 Sitios visitados:
-http://superpatanegra.com/texto/index.php 
-https://www.topster.es/texto/decodieren_encodieren.html
-https://www.convertstring.com/es/EncodeDecode/Base64Decode 
+- http://superpatanegra.com/texto/index.php 
+- https://www.topster.es/texto/decodieren_encodieren.html
+- https://www.convertstring.com/es/EncodeDecode/Base64Decode 
 
 En esta etapa de Research como no se tenía claro el formato de la aplicación (web o de escritorio; móvil), también se revisó la aplicación móvil Decrypto.
 
