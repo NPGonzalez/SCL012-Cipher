@@ -2,14 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado César</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+ 
+      <div id="contenedor">
+    
+          <div id="cabecera">
+                <center><h1>PALABRAS OCULTAS... mensajería privada</h1></center>
+          </div>
+          <form action="mailto:you@yourdmainhere.com" method="GET" enctype="text/plain" >                              
+        
+       <div id="contIzq">
+       
+          <div id="contenidoIzq">
+          
+            <p id="texto1">Protege bajo siete llaves tus pensamientos, deseos secretos y más...</p>
+
+            <h5><p id="texto2"> ...compártelos sólo con quien tú quieras</p></h5>
+          </div>
+         
+         </div>
+        <div id="contDer">             
+
+           <div id="offset1"><label for="offset">Nivel de Seguridad<textarea cols="5" rows="1" name="offset" id="offset" ></textarea></label>
+           </div>
+           
+           <div id="encodeMessage" >  
+              <h4> Escribe tu mensaje... </h4>  
+           <textarea cols="101" rows= "5" name="message" id="message"></textarea>          
+        </div>
+        <div id="encodeDecodeButton">
+            <input type="button" value="Recuperar Mensaje" id="buttonDecode" class="firstButton">
+            <input type="button" value="Transformar Mensaje"   id="buttonEncode" class="firstButton">
+         </div>  
+
+       <div id="cleanButton">
+         
+          <input  type="button" value="Borrar mensaje"   id="buttonClear" class="secondButton">   
+        </div>
+        <div id="decodeMessage">
+          <h4>...Tu mensaje privado </h4> 
+          <textarea cols="101" rows= "5" id="resultados"></textarea>   
+                       
+          </div>
+
+     
+          <div id="sendSaveButton">
+            
+            email:<input type="email" id="mail" value="tucorreo@ejemplo.com">
+            <input type="submit" value="Enviar"   id="buttonSend" class="secondButton" >
+            <input type="button" value="Guardar"  id="buttonSave" class="secondButton">
+
+   </div>
+            <a download="info.txt" id="downloadlink" style="display: none">Descarga mensaje privado</a>
+       
+        </div>
+
+
+  <div id="footer">
+      <hr style="margin-top:10px" color="#5D576B">
+      <footer>
+       <center>&copy; Copyright 2019 by NayPili. All rights reserved.</center>
+      </footer>
+  </div>
+       <script src="index.js"></script>
+       <script src="cipher.js"></script> 
+    </form>
+   </div>
   </body>
+
 </html>
