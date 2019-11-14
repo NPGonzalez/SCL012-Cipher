@@ -133,8 +133,8 @@ Dependiendo del offset dado por el usuario cada una de las letras es tansformada
 
 ### Test de usabilidad
 Luego de haber realizado las pruebas de usabilidad se modificó el sketch y prototipo.
-![Sketch_Cipher_Primera_Iteración](scr/images/sketchCipherPrimeraIter.png)
-![Prototipo_Cipher_Primera_Iteración](scr/images/MockupCipherPrimeraIter.png)
+![Sketch_Cipher_Primera_Iteración](src/images/sketchCipherPrimeraIter.png)
+![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
 
 ### Testing
 - Se verifica la implementación con **pruebas unitarias**.
