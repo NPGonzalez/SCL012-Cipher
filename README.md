@@ -17,14 +17,14 @@ Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones:
 Si bien este cifrado no ofrece mucha seguridad y los mensajes cifrados con este sistema pueden ser descifrados con facilidad, en la actualidad, es utilizado en otros sistemas más complejos de codificado (cifrado Vigenère, ROT13).
 
 ## Aplicación de Cifrado y Descifrado César
-![Aplicación](src/images/AppChiper.png)
+![Aplicación](src/images/AppCipher.png)
 
 La aplicación de Cifrado César es una aplicación web, que permite al usuario cifrar y descifrar textos, utilizando el cifrado César. En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
 
-### USO
+### Uso
 Esta aplicación puede ser usadas en distintos contextos: generación de claves secretas, mensajería secreta entre personas y otros.
 
-### MODO DE EMPLEO
+### Modo de empleo
 #### Para Codificar Mensajes
 - Seleccionar un nivel de seguridad (Se ingresa un número entero)
 - Escribir mensaje a cifrar en área de texto superior
