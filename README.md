@@ -80,7 +80,7 @@ En esta etapa de Research, como no se tenía claro el formato de la aplicación 
 En esta etapa se analizó la información recolectada en la fase anerior tratando de encontrar elementos que permitieran entender las necesidades de los potenciales usurios del producto.
 
 ### Ideación _ Prototipado
-![Sketch_Prototipo_Cipher_Inicial] (src/images/sketchMockupInicial.png)
+![Sketch_Prototipo_Cipher_Inicial](src/images/sketchMockupInicial.png)
 
 #### Principales Usuarios
 Los principales usuarios de este producto son adolescentes, jóvenes y adultos; todas aquellas personas que tengan la necesidad de mantener textos privados y que puedan ser leídos por ellos mismos en un momento posterior a su creación o intercambiados con otros usuarios de la aplicación.
