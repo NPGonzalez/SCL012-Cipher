@@ -19,15 +19,14 @@
     width: 1200px;
     }
   
-    #cleanButton{
-      
-      height: 40px;
-      width: 400px;
-  
-        padding-top:10px;
-        padding-left: 740px;
-        margin-left:10px;
+  #cleanButton{ 
+    height: 40px;
+    width: 400px;
+    padding-top:10px;
+    padding-left: 740px;
+    margin-left:10px;
     }
+
   #contenedor{
     margin:0 auto;
     height:485px;
@@ -46,6 +45,7 @@
     margin-top:105px;
     border-radius: 8px;
   }
+
   #contenidoIzq{
     position:relative;
     width: 300px;
@@ -54,12 +54,9 @@
     margin-left: 10px;
     margin-top:100px;
     padding-right:20px;
-    color:#FDFDFF;  
-    
-    
+    color:#FDFDFF;      
   }
-  
-  
+    
   #contDer{
     float:left;
     height: 485px;
@@ -70,29 +67,24 @@
     margin-right: 10px;
   }
   
-  
   #encodeMessage{
-   
     height: 120px;
     width: 800px;
     margin-left:10px;
     padding:30px;
     color:#5D576B;  
-  
   }
+
   #encodeDecodeButton{
-  
-  height: 40px;
-  width: 840px;
-  
+    height: 40px;
+    width: 840px;
     padding-top:10px;
     padding-right: 30px;
     margin-left:10px;
   }
   
-  
   .firstButton{
-  float: right;
+    float: right;
     width:150px;
     text-decoration: none;
     padding: 5px;
@@ -101,10 +93,8 @@
     background-color:#661e13;
     border-radius: 8px;
     margin-left:5px;
-    border:none;
-    
+    border:none;  
   }
-  
   
   .secondButton{
     width:100px;
@@ -115,33 +105,32 @@
     background-color:#301137;
     border-radius: 8px;
     border: none;
-  }
-  
-  
+  } 
   
   #message{
     float:left;
-      background-color:#FDFDFF;
-      border-radius:8px;
-      padding: 10px;
-      font-family: Verdana;
-      font-size: 15px; 
-      border-radius: 8px;
-      color:#5D576B;  
-      }
+    background-color:#FDFDFF;
+    border-radius:8px;
+    padding: 10px;
+    font-family: Verdana;
+    font-size: 15px; 
+    border-radius: 8px;
+    color:#5D576B;  
+  }
+
   #offset{
     border-radius:8px;
     margin-left:10px;
     text-align: center;
-   }
-    #offset1{
+  }
+
+  #offset1{
       float:right;
       padding-right: 10px;
       margin-left:5px;
       color:#5D576B;  
-        }
-  
-  
+  }
+    
   #resultados{
       float:left;
       background-color:rgb(238, 227, 227);
@@ -150,13 +139,10 @@
       font-family: Verdana;
       font-size: 15px; 
       border-radius:8px;
-      color:#5D576B;  
-   
-   
-    
-    }
-    #decodeMessage{
-  
+      color:#5D576B;      
+  }
+
+  #decodeMessage{
       height: 155px;
       width: 855px;
       margin-left:10px;
@@ -165,34 +151,31 @@
     }
   
   #sendSaveButton{
-  
     height:25px;
     width: 450px;
     margin-left:310px;
     padding-left:120px;
     color:#5D576B;  
   }
-  
-  
-  
+   
   #footer{
-      clear:both;
-      background-color:#5D576B;  
-      text-align: center;
-      font-size:12px ;
-      border-radius:10px;
-      color:white;
+    clear:both;
+    text-align: center;
+    font-size:12px ;
+    border-radius:10px;
+    width: 1200px;
+    color:#5D576B;
   }
-  
-  
+    
   #texto1{
     margin-left:20px;
     margin-bottom: 30px;
     color:#FDFDFF;  
   }
+
   #texto2{
      margin-left:20px;
      margin-top:30px;
      color:#FDFDFF;  
   }
-  /* Acá va tu código */
+  
