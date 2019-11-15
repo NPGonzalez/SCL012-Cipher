@@ -137,7 +137,7 @@ Luego de haber realizado las pruebas de usabilidad se modificó el sketch y prot
 ### Testing
 - Se verifica la implementación con **pruebas unitarias**.
 ![Prueba unitaria 1](src/images/testsUnitarios1.png)
-![Prueba unitaria 2](src/images/testsUnitarios2.png)
+
 
 
 ## Herramientas empleadas

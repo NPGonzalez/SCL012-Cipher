@@ -10,108 +10,60 @@ describe('cipher', () => {
       assert.equal(typeof cipher.encode, 'function');
     });
 
+  //Validación ingreso de string
     it('debería retornar "Ingrese texto para codificar" para "" con offset 33',()=>{
-      assert.equal(cipher.encode(33,"" ),"Ingrese texto para codificar" );
+      assert.equal(cipher.encode(33,""),"Ingrese texto para transformar");
     });
-
+//CODIFICADO OFFSET POSITIVO
+  //Alfabeto simple Mayúscula
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33',()=>{
       assert.equal(cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"),"HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
 
+  //Alfabeto simple minúscula
     it('debería retornar "bcdefghijklmnopqrstuvwxyza" para "abcdefghijklmnopqrstuvwxyz" con offset 27',()=>{
       assert.equal(cipher.encode(27,"abcdefghijklmnopqrstuvwxyz" ),"bcdefghijklmnopqrstuvwxyza" );
     });
-
+  
+  //Números
     it('debería retornar "1234567890" para "0123456789" con offset 11',()=>{
-      assert.equal(cipher.encode(11,"0123456789" ),"1234567890" );
+      assert.equal(cipher.encode(11,"0123456789"),"1234567890");
     });
 
-  //Caracteres " ",¹,ñ,²,Ñ,±
-    it('debería retornar "¹" para " " con offset 27',()=>{
-      assert.equal(cipher.encode(27," "),"¹");
+  //Vocales con acento mayúsculas y minúsculas, Ñ y ñ, ""
+    it('debería retornar "ŚŢŦŬųźƂƆƌƓƊŪ¹" para "ÁÉÍÓÚáéíóúñÑ " con offset 33',()=>{
+      assert.equal(cipher.encode(33,"ÁÉÍÓÚáéíóúñÑ " ),"ŚŢŦŬųźƂƆƌƓƊŪ¹" );
     });
 
-    it('debería retornar "²" para "ñ" con offset 27',()=>{
-        assert.equal(cipher.encode(27,"ñ" ),"²" );
-    });
-
-    it('debería retornar "±" para "Ñ" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"Ñ"),"±");
-    });
-    it('debería retornar " " para "¹" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"¹")," ");
-    });
-    //Vocales mayúsculas con acento
-
-    it('debería retornar "ý" para "Á" con offset 27',()=>{
-        assert.equal(cipher.encode(27,"Á" ),"ý" );
-    });
-
-    it('debería retornar "þ" para "É" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"É"),"þ");
-    });
-
-    it('debería retornar "ÿ" para "Í" con offset 27',()=>{
-        assert.equal(cipher.encode(27,"Í" ),"ÿ" );
-    });
-
-    it('debería retornar "Ā" para "Ó" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"Ó"),"Ā");
-    });
-
-    it('debería retornar "ā" para "Ú" con offset 27',()=>{
-        assert.equal(cipher.encode(27,"Ú" ),"ā" );
-    });
-
-    //Vocales minúsculas con acento
-    it('debería retornar "Ă" para "á" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"á" ),"Ă" );
-    });
-
-    it('debería retornar "ă" para "é" con offset 27',()=>{
-     assert.equal(cipher.encode(27,"é"),"ă");
-    });
-
-    it('debería retornar "Ą" para "í" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"í" ),"Ą" );
-    });
-
-    it('debería retornar "ą" para "ó" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"ó"),"ą");
-    });
-
-    it('debería retornar "Ć" para "ú" con offset 27',()=>{
-      assert.equal(cipher.encode(27,"ú" ),"Ć" );
-    });
-
-    //Cualquier otro caracter
+   //Cualquier otro caracter
     it('debería retornar "°!#$%&/()=?¡" para "°!#$%&/()=?¡" con offset 27',()=>{
       assert.equal(cipher.encode(27,"°!#$%&/()=?¡" ),"°!#$%&/()=?¡" );
     });
 
-    //Codificado con offset negativo
+    //CODIFICADO OFFSET NEGATIVO
+    //Abecedario simple mayúsculas
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset -33',()=>{
       assert.equal(cipher.encode(-33,"HIJKLMNOPQRSTUVWXYZABCDEFG" ),"ABCDEFGHIJKLMNOPQRSTUVWXYZ" );
     });
 
-    //Caracteres " ",¹,ñ,²,Ñ,±
-    it('debería retornar "¹" para " " con offset -27',()=>{
-      assert.equal(cipher.encode(-27," "),"¹");
+    //Abecedario simple minúsculas
+    it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "bcdefghijklmnopqrstuvwxyza" con offset -27',()=>{
+      assert.equal(cipher.encode(-27,"bcdefghijklmnopqrstuvwxyza" ),"abcdefghijklmnopqrstuvwxyz" );
     });
-    it('debería retornar " " para "¹" con offset -27',()=>{
-      assert.equal(cipher.encode(-27,"¹")," ");
+
+    //Números
+    it('debería retornar "0123456789" para "1234567890" con offset -11',()=>{
+      assert.equal(cipher.encode(-11,"1234567890" ),"0123456789" );
     });
-    it('debería retornar "²" para "ñ" con offset -27',()=>{
-      assert.equal(cipher.encode(-27,"ñ"),"²");
+
+    //Vocales con acento mayúsculas y minúsculas, Ñ y ñ, ""
+    it('debería retornar "ŚŢŦŬųźƂƆƌƓƊŪ¹" para "ÁÉÍÓÚáéíóúñÑ " con offset -33',()=>{
+      assert.equal(cipher.encode(-33,"ÁÉÍÓÚáéíóúñÑ " ),"ŚŢŦŬųźƂƆƌƓƊŪ¹" );
     });
-    it('debería retornar "±" para "Ñ" con offset -27',()=>{
-      assert.equal(cipher.encode(-27,"Ñ"),"±");
-    });
-    it('debería retornar "ñ" para "²" con offset -27',()=>{
-      assert.equal(cipher.encode(-27,"²" ),"ñ" );
-    });
-    it('debería retornar "Ñ" para "±" con offset -27',()=>{
-      assert.equal(cipher.encode(-27,"±"),"Ñ");
+
+   //Cualquier otro caracter
+    it('debería retornar "°!#$%&/()=?¡" para "°!#$%&/()=?¡" con offset -27',()=>{
+      assert.equal(cipher.encode(-27,"°!#$%&/()=?¡" ),"°!#$%&/()=?¡" );
     });
    });
 
@@ -120,106 +72,61 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
-    it('debería retornar "Ingrese texto para decodificar" para "" con offset 33',()=>{
-      assert.equal(cipher.decode(33,"" ),"Ingrese texto para decodificar" );
-    });
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
-      assert.equal(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG" ),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-    });
-    it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "bcdefghijklmnopqrstuvwxyza" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"bcdefghijklmnopqrstuvwxyza" ),"abcdefghijklmnopqrstuvwxyz" );
-    });
-    it('debería retornar "0123456789" para "1234567890" con offset 11',()=>{
-      assert.equal(cipher.decode(11,"1234567890" ),"0123456789" );
-    });
-    it('debería retornar " " para "¹" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"¹")," ");
-    });
-    it('debería retornar "ñ" para "²" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"²" ),"ñ" );
-    });
-    it('debería retornar "Ñ" para "±" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"±"),"Ñ");
+  //Validación ingreso de string
+    it('debería retornar "Ingrese texto para transformar" para "" con offset 33',()=>{
+      assert.equal(cipher.decode(33,""),"Ingrese texto para transformar");
     });
 
-    //Vocales mayúsculas con acento
+//OFFSET POSITIVO
+  //Abecedario simple mayúsculas
+  it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{
+    assert.equal(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG"),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  });
 
-    it('debería retornar "Á" para "ý" con offset 27',()=>{
-        assert.equal(cipher.decode(27,"ý" ),"Á" );
-    });
+  //Abecedario simple minúsculas
+  it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "bcdefghijklmnopqrstuvwxyza" con offset 27',()=>{
+    assert.equal(cipher.decode(27,"bcdefghijklmnopqrstuvwxyza"),"abcdefghijklmnopqrstuvwxyz");
+  });
 
-    it('debería retornar "É" para "þ" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"þ"),"É");
-    });
+  //Números
+  it('debería retornar "0123456789" para "1234567890" con offset 11',()=>{
+    assert.equal(cipher.decode(11,"1234567890" ),"0123456789");
+  });
 
-    it('debería retornar "Í" para "ÿ" con offset 27',()=>{
-        assert.equal(cipher.decode(27,"ÿ" ),"Í" );
-    });
+  //Vocales con acento mayúsculas y minúsculas, Ñ y ñ, ""
+  it('debería retornar "ÁÉÍÓÚáéíóúñÑ " para "ŚŢŦŬųźƂƆƌƓƊŪ¹" con offset 33',()=>{
+    assert.equal(cipher.decode(33,"ŚŢŦŬųźƂƆƌƓƊŪ¹"),"ÁÉÍÓÚáéíóúñÑ ");
+  });
 
-    it('debería retornar "Ó" para "Ā" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"Ā"),"Ó");
-    });
+ //Cualquier otro caracter
+  it('debería retornar "°!#$%&/()=?¡" para "°!#$%&/()=?¡" con offset 27',()=>{
+    assert.equal(cipher.decode(27,"°!#$%&/()=?¡"),"°!#$%&/()=?¡");
+  });
 
-    it('debería retornar "Ú" para "ā" con offset 27',()=>{
-        assert.equal(cipher.decode(27,"ā" ),"Ú" );
-    });
 
-    //Vocales minúsculas con acento
-    it('debería retornar "á" para "Ă" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"Ă" ),"á" );
-    });
+//DECODIFICADO OFFSET NEGATIVO
+  //Abecedario simple mayúsculas
+  it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset -33',()=>{
+    assert.equal(cipher.decode(-33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"),"HIJKLMNOPQRSTUVWXYZABCDEFG");
+  });
 
-    it('debería retornar "é" para "ă" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"ă"),"é");
-    });
+  //Abecedario simple minúsculas
+  it('debería retornar "bcdefghijklmnopqrstuvwxyza" para "abcdefghijklmnopqrstuvwxyz" con offset -27',()=>{
+    assert.equal(cipher.decode(-27,"abcdefghijklmnopqrstuvwxyz"),"bcdefghijklmnopqrstuvwxyza");
+  });
 
-    it('debería retornar "í" para "Ą" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"Ą" ),"í" );
-    });
+  //Números
+  it('debería retornar "1234567890" para "0123456789" con offset -11',()=>{
+    assert.equal(cipher.decode(-11,"0123456789"),"1234567890");
+  });
 
-    it('debería retornar "ó" para "ą" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"ą"),"ó");
-    });
-
-    it('debería retornar "ú" para "Ć" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"Ć" ),"ú" );
-    });
-
-    //Cualquier otro caracter
-    it('debería retornar "°!#$%&/()=?¡" para "°!#$%&/()=?¡" con offset 27',()=>{
-      assert.equal(cipher.decode(27,"°!#$%&/()=?¡" ),"°!#$%&/()=?¡" );
-    });
-
-    //DECODIFICADO OFFSET NEGATIVO
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset -33',()=>{
-      assert.equal(cipher.decode(-33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ" ),"HIJKLMNOPQRSTUVWXYZABCDEFG" );
-    });
-
-    //Caracteres " ",¹,ñ,²,Ñ,±
-
-    it('debería retornar " " para "¹" con offset -27',()=>{
-      assert.equal(cipher.decode(-27,"¹")," ");
-    });
-   
-    it('debería retornar "¹" para " " con offset -27',()=>{
-      assert.equal(cipher.decode(-27," "),"¹");
-    });
-
-    it('debería retornar "²" para "ñ" con offset -27',()=>{
-      assert.equal(cipher.decode(-27,"ñ" ),"²" );
-    });
-
-    it('debería retornar "±" para "Ñ" con offset -27',()=>{
-      assert.equal(cipher.decode(-27,"Ñ"),"±");
-    });
-
-    it('debería retornar "ñ" para "²" con offset -27',()=>{
-      assert.equal(cipher.decode(-27,"²" ),"ñ" );
-    });
-
-    it('debería retornar "Ñ" para "±" con offset -27',()=>{
-      assert.equal(cipher.decode(-27,"±"),"Ñ");
-    });
-
+  //Vocales con acento mayúsculas y minúsculas, Ñ y ñ, ""
+  it('debería retornar "ÁÉÍÓÚáéíóúñÑ " para "ŚŢŦŬųźƂƆƌƓƊŪ¹" con offset -33',()=>{
+    assert.equal(cipher.decode(-33,"ŚŢŦŬųźƂƆƌƓƊŪ¹"),"ÁÉÍÓÚáéíóúñÑ ");
+  });
+  //Cualquier otro caracter
+  it('debería retornar "°!#$%&/()=?¡" para "°!#$%&/()=?¡" con offset -27',()=>{
+    assert.equal(cipher.decode(-27,"°!#$%&/()=?¡" ),"°!#$%&/()=?¡" );
+  });
   });
 });

@@ -14,19 +14,20 @@ document.getElementById("buttonEncode").addEventListener("click", function (){
 
 //*********************************      
 // Llamado función de limpieza de áreas de texto
-document.getElementById("buttonClear").addEventListener("click",function clear(){
+document.getElementById('buttonClear').addEventListener('click',function clear(){
   document.getElementById('message').value='';
   document.getElementById('offset').value='';
-  document.getElementById('resultados').value='';
+  document.getElementById('resultados').value=''
+  document.getElementById('downloadlink').style="display: none";
 }); 
 
   
 //*********************************
 //Función para guardar mensaje en archivo de texto
       (function () {
-          var textFile = null,
+          let textFile = null,
             makeTextFile = function (text) {
-              var data = new Blob([text], {type: 'text/plain'});
+              let data = new Blob([text], {type: 'text/plain'});
           
 
               if (textFile !== null) {
@@ -39,13 +40,13 @@ document.getElementById("buttonClear").addEventListener("click",function clear()
             };
           
           
-            var create = document.getElementById('buttonSave'),
+            let create = document.getElementById('buttonSave'),
               textbox = document.getElementById('resultados'),
               offsetcode= document.getElementById('offset');
               
 
               create.addEventListener('click', function () {
-              var link = document.getElementById('downloadlink');
+              let link = document.getElementById('downloadlink');
               link.href = makeTextFile(textbox.value+' '+ offsetcode.value);
               link.style.display = 'block';
             }, false);
