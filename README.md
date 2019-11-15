@@ -5,7 +5,7 @@ Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Ca
 
 ![caeser-cipher](src/images/offsetCipher.png)
 
-El cifrado César es una técnica simple de cifrado de mensajes, que se realiza por sustitución; es decir, cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento u offset) más adelante en el alfabeto. 
+El cifrado César es una técnica simple de cifrado de mensajes que se realiza por sustitución; es decir, cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento u offset) más adelante en el alfabeto. 
 
 Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones:
 
@@ -19,7 +19,7 @@ Si bien este cifrado no ofrece mucha seguridad y los mensajes cifrados con este 
 ## Aplicación de Cifrado y Descifrado César
 ![Aplicación](src/images/AppCipher.png)
 
-La aplicación de Cifrado César es una aplicación web, que permite al usuario cifrar y descifrar textos, utilizando el cifrado César. En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
+La aplicación **"Palabras ocultas"** es una aplicación web que permite al usuario cifrar y descifrar textos, utilizando el cifrado César. En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
 
 ### Uso
 Esta aplicación puede ser usadas en distintos contextos: generación de claves secretas, mensajería secreta entre personas y otros.
@@ -107,10 +107,8 @@ La interfaz presenta otras funcionalidades al usuario como:
 
 #### Funcionalidades de la aplicación requeridas
 La aplicación permite al usuario:
-- Cifrar y descifrar textos y visceversa determinado por un offset dado por el usuario, para el alfabeto simple (solamente mayúsculas y sin ñ).
-
-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-Dependiendo del offset dado por el usuario cada una de las letras es tansformada en otra letra dentro del mismo conjunto de letras mayúsculas para todos los offsets. 
+- Cifrar y descifrar textos y visceversa determinado por un offset dado por el usuario, para el alfabeto simple (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z, sin Ñ). 
+- Dependiendo del offset dado por el usuario cada una de las letras es tansformada en otra letra dentro del mismo conjunto de letras mayúsculas para todos los offsets. 
 
 #### Funcionalidades de la aplicación adicionales (extra o “Hacker edition”)
 * Cifra/descifra el alfabeto simple minúsculas para un offset positivo o negativo.
