@@ -18,7 +18,7 @@ document.getElementById('buttonClear').addEventListener('click',function clear()
   document.getElementById('message').value='';
   document.getElementById('offset').value='';
   document.getElementById('resultados').value=''
-  document.getElementById('downloadlink').style="display: none";
+  document.getElementById('downLoadLink').style="none";
 }); 
 
   
@@ -46,7 +46,7 @@ document.getElementById('buttonClear').addEventListener('click',function clear()
               
 
               create.addEventListener('click', function () {
-              let link = document.getElementById('downloadlink');
+              let link = document.getElementById('downLoadLink');
               link.href = makeTextFile(textbox.value+' '+ offsetcode.value);
               link.style.display = 'block';
             }, false);

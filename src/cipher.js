@@ -2,8 +2,8 @@ window.cipher = {
   encode: (offset,string) => {
     let newText='';
     let newOffset=parseInt(offset);
-      if((string)===''){ //valida cadena vacía
-        return ('Ingrese texto para transformar');
+      if((string)===''||(offset==="")){ //valida cadena vacía
+        return ('Ingrese nivel de seguridad y texto para transformar');
       }
       else{
         for(let i=0; i<=(string.length-1); i++){ 
@@ -87,8 +87,8 @@ window.cipher = {
   },
   decode: (offset,string) => {
     let newOffset=parseInt(offset);
-    if((string)===''){ //valida cadena vacía
-      return ('Ingrese texto para transformar');
+    if((string)===''||(offset==="")){ //valida cadena vacía
+      return ('Ingrese nivel de seguridad y texto para transformar');
     }
 
     else{

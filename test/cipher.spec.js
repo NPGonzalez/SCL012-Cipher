@@ -11,8 +11,8 @@ describe('cipher', () => {
     });
 
   //Validación ingreso de string
-    it('debería retornar "Ingrese texto para codificar" para "" con offset 33',()=>{
-      assert.equal(cipher.encode(33,""),"Ingrese texto para transformar");
+    it('debería retornar "Ingrese nivel de seguridad y texto para transformar" para "" con offset""',()=>{
+      assert.equal(cipher.encode("",""),"Ingrese nivel de seguridad y texto para transformar");
     });
 //CODIFICADO OFFSET POSITIVO
   //Alfabeto simple Mayúscula
@@ -73,8 +73,8 @@ describe('cipher', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
   //Validación ingreso de string
-    it('debería retornar "Ingrese texto para transformar" para "" con offset 33',()=>{
-      assert.equal(cipher.decode(33,""),"Ingrese texto para transformar");
+    it('debería retornar "Ingrese nivel de seguridad y texto para transformar" para "" con offset ""',()=>{
+      assert.equal(cipher.decode("",""),"Ingrese nivel de seguridad y texto para transformar");
     });
 
 //OFFSET POSITIVO
