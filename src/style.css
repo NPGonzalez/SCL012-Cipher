@@ -12,7 +12,14 @@ color:#5D576B;
 .contenedor{
 padding: 0;
 margin:0;
-
+list-style: none;
+display: -webkit -box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display:flex;
+justify-content: space-around;
+display:row-wrap;
 }
 
 #cabecera{
@@ -25,7 +32,6 @@ width: 100%;
 text-align: center;
 }
   
-
 #contIzq{
 background-color:#5D576B;  
 color:#FDFDFF; 
@@ -33,7 +39,7 @@ float:left;
 height:342px;
 width: 25%;
 border: 1px solid whitesmoke;
-margin-left: 15px;
+margin-left: 10%;
 margin-top:90px;
 border-radius: 8px;
 padding: 10px;  
@@ -47,7 +53,7 @@ color:#FDFDFF;
 
 #texto2{
 margin-left:20px;
-margin-top:30px;
+margin-top:20px;
 color:#FDFDFF;  
 }
 
@@ -64,7 +70,7 @@ color:#FDFDFF;
 #contDer{
 float:left;
 height: 485px;
-width: 68%;
+width: 50%;
 padding: 10px;
 margin-left: 10px;
 margin-top:50px;
@@ -146,7 +152,7 @@ margin-top: 10px;
 #sendSaveButton{
 float: right;
 height:25px;
-margin-left:310px;
+
 padding-left:120px;
 color:#5D576B;  
 }
