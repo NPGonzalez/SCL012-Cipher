@@ -12,13 +12,7 @@ color:#5D576B;
 .contenedor{
 padding: 0;
 margin:0;
-list-style: none;
-display: -webkit -box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display:flex;
-justify-content: space-around;
+
 }
 
 #cabecera{
