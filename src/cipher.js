@@ -1,13 +1,15 @@
 window.cipher = {
   encode: (offset,string) => {
     let newText='';
-    let newOffset=parseInt(offset);
-      if((string)===''||(offset==="")){ //valida cadena vacía
-        return ('Ingrese nivel de seguridad y texto para transformar');
+     let newOffset=parseInt(offset);
+     let varValid =typeof(newOffset);
+//VALIDACIÓN DE TIPO DE OFFSET Y QUE STRING SEA DISTINTO DE VACÍO
+      if((string==='')||(varValid==='NaN')){ //valida cadena vacía
+        return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
       }
       else{
         for(let i=0; i<=(string.length-1); i++){ 
-
+//TRANSFORMA VOCALES MAYÚSCULAS CON ACENTOS, VOCALES MINÚSCULAS CON ACENTO, ñ, Ñ Y ESPACIO
         if ((string.charCodeAt(i)===193) || (string.charCodeAt(i)===201) || (string.charCodeAt(i)===205) || (string.charCodeAt(i)===211) || (string.charCodeAt(i)===218) ||
         (string.charCodeAt(i)===225) || (string.charCodeAt(i)===233) || (string.charCodeAt(i)===237) || (string.charCodeAt(i)===243) ||(string.charCodeAt(i)===250)||
          (string.charCodeAt(i)===209)||(string.charCodeAt(i)===241)||
@@ -87,8 +89,10 @@ window.cipher = {
   },
   decode: (offset,string) => {
     let newOffset=parseInt(offset);
-    if((string)===''||(offset==="")){ //valida cadena vacía
-      return ('Ingrese nivel de seguridad y texto para transformar');
+    let varValid =typeof(newOffset);
+  //VALIDACIÓN DE TIPO DE OFFSET Y QUE STRING SEA DISTINTO DE VACÍO
+    if((string==='')||(varValid==='NaN')){ //valida cadena vacía
+      return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
     }
 
     else{

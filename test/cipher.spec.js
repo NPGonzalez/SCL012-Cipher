@@ -10,9 +10,9 @@ describe('cipher', () => {
       assert.equal(typeof cipher.encode, 'function');
     });
 
-  //Validación ingreso de string
-    it('debería retornar "Ingrese nivel de seguridad y texto para transformar" para "" con offset""',()=>{
-      assert.equal(cipher.encode("",""),"Ingrese nivel de seguridad y texto para transformar");
+  //Validación ingreso de string y offset número
+    it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset "e"',()=>{
+      assert.equal(cipher.encode("e",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
     });
 //CODIFICADO OFFSET POSITIVO
   //Alfabeto simple Mayúscula
@@ -73,9 +73,9 @@ describe('cipher', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
   //Validación ingreso de string
-    it('debería retornar "Ingrese nivel de seguridad y texto para transformar" para "" con offset ""',()=>{
-      assert.equal(cipher.decode("",""),"Ingrese nivel de seguridad y texto para transformar");
-    });
+  it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset "e"',()=>{
+    assert.equal(cipher.decode("e",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+  });
 
 //OFFSET POSITIVO
   //Abecedario simple mayúsculas

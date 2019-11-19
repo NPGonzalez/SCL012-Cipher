@@ -4,7 +4,7 @@ padding:0;
 }
   
 body{  
-background-color:#E5D8D1;
+background-color:whitesmoke;
 font-family:verdana;
 color:#5D576B;  
 }
@@ -26,7 +26,6 @@ display:row-wrap;
 background-color:#5D576B;  
 color:#FDFDFF;  
 font-family: Verdana; 
-border-radius:5px;
 padding:10px;
 width: 100%;
 text-align: center;
@@ -38,8 +37,7 @@ color:#FDFDFF;
 float:left;
 height:63%;
 width: 25%;
-border: 1px solid whitesmoke;
-margin-left: 1%;
+margin-left: 5%;
 margin-top:90px;
 border-radius: 8px;
 padding-right: 20px;  
@@ -106,27 +104,34 @@ color:#5D576B;
 #encodeDecodeButton{
 height: 40px;
 padding-top:10px;
+margin-right:5px;
 }
 
 #cleanButton{ 
 float: right;
 height: 40px;
+margin-right: 5px;
 }
 
 .firstButton{
+height: 35px;
 float: right;
 width:153px;
-text-decoration: none;
 padding: 5px;
 font-size: 15px;
 color:#FDFDFF;  
-background-color:#661e13;
+background-color:#661E13;
 border-radius: 8px;
 margin-left:5px;
-border:1px solid white;  
+border:1px solid #5D576B;;  
 }
   
-.secondButton{
+.firstButton:hover{
+
+  background-color: rgb(209, 56, 76);
+ }
+
+ .secondButton{
 height: 25px;
 width:100px;
 padding: 5px;
@@ -134,8 +139,12 @@ font-size: 12px;
 color:#FDFDFF;  
 background-color:#301137;
 border-radius: 8px;
-border:1px solid white; 
+border:1px solid #5D576B;
 } 
+.secondButton:hover{
+  opacity: 0.9;
+  background-color: rgb(123, 13, 138);
+ }
   
 .texts{
 height: 5rem;
@@ -154,23 +163,26 @@ float: right;
 height:25px;
 padding-left:120px;
 color:#5D576B;  
+margin-right: 5px;
 }
    
 #downLoadLink{
-  display: none;
+display: none;
+float: right;
 }
 
 #linecopyrights{
-  margin-top:10px;
-  color:"#5D576B"
+margin-top:10px;
+color:"#5D576B"
 }
+
 #footer{
 clear:both;
 text-align: center;
 font-size:12px ;
-border-radius:10px;
 width: 100%;
-color:#5D576B;
+color:white;
+background-color:#5D576B;
     }
     
 
