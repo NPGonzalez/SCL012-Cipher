@@ -36,13 +36,13 @@ text-align: center;
 background-color:#5D576B;  
 color:#FDFDFF; 
 float:left;
-height:342px;
+height:63%;
 width: 25%;
 border: 1px solid whitesmoke;
-margin-left: 10%;
+margin-left: 5%;
 margin-top:90px;
 border-radius: 8px;
-padding: 10px;  
+padding-right: 20px;  
 }
 
 #texto1{
@@ -62,15 +62,15 @@ height: 20px;
 width: 100%;
 font-size: 20px;
 margin-left: 5px;
-margin-top:100px;
-padding-right:20px;
+margin-top:80px;
+padding-right:30px;
 color:#FDFDFF;      
 }
     
 #contDer{
 float:left;
 height: 485px;
-width: 50%;
+width: 55%;
 padding: 10px;
 margin-left: 10px;
 margin-top:50px;
@@ -152,7 +152,6 @@ margin-top: 10px;
 #sendSaveButton{
 float: right;
 height:25px;
-
 padding-left:120px;
 color:#5D576B;  
 }
