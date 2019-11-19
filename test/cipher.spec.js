@@ -11,9 +11,17 @@ describe('cipher', () => {
     });
 
   //Validación ingreso de string y offset número
-    it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset "e"',()=>{
-      assert.equal(cipher.encode("e",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+    it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset ""',()=>{
+      assert.equal(cipher.encode("",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
     });
+    it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "A" con offset "e"',()=>{
+      assert.equal(cipher.encode("e","A"),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+    });
+
+    it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "A" con offset "E"',()=>{
+      assert.equal(cipher.encode("E","A"),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+    });
+
 //CODIFICADO OFFSET POSITIVO
   //Alfabeto simple Mayúscula
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33',()=>{
@@ -73,10 +81,16 @@ describe('cipher', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
   //Validación ingreso de string
-  it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset "e"',()=>{
-    assert.equal(cipher.decode("e",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+  it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "" con offset ""',()=>{
+    assert.equal(cipher.decode("",""),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+  });
+  it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "A" con offset "e"',()=>{
+    assert.equal(cipher.decode("e","A"),'Ingrese nivel de seguridad (número entero) y texto para transformar');
   });
 
+  it('debería retornar "Ingrese nivel de seguridad (número entero) y texto para transformar" para "A" con offset "E"',()=>{
+    assert.equal(cipher.decode("E","A"),'Ingrese nivel de seguridad (número entero) y texto para transformar');
+  });
 //OFFSET POSITIVO
   //Abecedario simple mayúsculas
   it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',()=>{

@@ -76,6 +76,7 @@ margin-right: 10px;
 }
 
 #offset{
+width:80px;
 border-radius:8px;
 margin-left:10px;
 text-align: center;
@@ -115,16 +116,16 @@ margin-right: 5px;
 }
 
 .firstButton{
-height: 35px;
-float: right;
-width:153px;
-padding: 5px;
-font-size: 15px;
-color:#FDFDFF;  
-background-color:#661E13;
-border-radius: 8px;
-margin-left:5px;
-border:1px solid #5D576B;;  
+  height: 35px;
+  float: right;
+  width:153px;
+  padding: 5px;
+  font-size: 15px;
+  color:#FDFDFF;  
+  background-color:#661E13;
+  border-radius: 8px;
+  margin-left:5px;
+  border:1px solid #5D576B;
 }
   
 .firstButton:hover{
