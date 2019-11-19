@@ -79,6 +79,7 @@ margin-right: 10px;
 border-radius:8px;
 margin-left:10px;
 text-align: center;
+resize:none;
 }
 
 #offset1{
@@ -156,6 +157,7 @@ font-family: Verdana;
 font-size: 15px; 
 color:#5D576B;  
 margin-top: 10px;
+resize:none;
 }
 
 #sendSaveButton{
