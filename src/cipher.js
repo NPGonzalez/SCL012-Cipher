@@ -1,17 +1,13 @@
 window.cipher = {
   encode: (offset,string) => {
     let newText='';
-
+    let newOffset=parseInt(offset);
 //VALIDACIÓN DE TIPO DE OFFSET Y QUE STRING SEA DISTINTO DE VACÍO
-      if((string==='')||(offset==='')){ //valida cadena vacía
+      if((string==='')||(offset==='')||(offset==='e')||(offset==='E')){ //valida cadena vacía
         return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
-       }
-      else{
-        if((offset==='e')||(offset==='E')){ 
-          return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
-        }
+       }    
         else{
-        let newOffset=parseInt(offset);
+        
         for(let i=0; i<=(string.length-1); i++){ 
         
 //TRANSFORMA VOCALES MAYÚSCULAS CON ACENTOS, VOCALES MINÚSCULAS CON ACENTO, ñ, Ñ Y ESPACIO
@@ -87,24 +83,20 @@ window.cipher = {
                    }   
                   }
                  }                                                                                                    
-    return newText;  
-        }
-        }                            
+    return newText; 
+          }                            
   },
   decode: (offset,string) => {
   //VALIDACIÓN DE TIPO DE OFFSET Y QUE STRING SEA DISTINTO DE VACÍO
-    if((string==='')||(offset==='')){ //valida cadena vacía
+    if((string==='')||(offset==='')||(offset==='e')||(offset==='E')){ //valida cadena vacía
       return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
     }
-    else{
-     if((offset==='e')||(offset==='E')){ //valida cadena vacía
-        return ('Ingrese nivel de seguridad (número entero) y texto para transformar');
-    }
+  
     else{
       let newOffset=parseInt(offset);
       let changeOffsetSign= -newOffset;
       return cipher.encode(changeOffsetSign,string); 
-      }
+      
     }
   }
 };

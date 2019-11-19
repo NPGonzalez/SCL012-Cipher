@@ -2,14 +2,14 @@
 // Llamado de función codificado         
 document.getElementById("buttonEncode").addEventListener("click", function (){
      let resultados   = document.getElementById("resultados");
-     resultados.innerHTML = cipher.encode(document.getElementById('offset').value,document.getElementById('message').value);   
+         resultados.value= cipher.encode(document.getElementById('offset').value,document.getElementById('message').value);   
   }); 
 
 //*********************************      
 // Llamado de función de decodificado  
   document.getElementById("buttonDecode").addEventListener("click", function(){
       let resultados = document.getElementById("resultados");
-      resultados.innerHTML = cipher.decode(document.getElementById('offset').value,document.getElementById('message').value);
+          resultados.value= cipher.decode(document.getElementById('offset').value,document.getElementById('message').value);
 }); 
 
 //*********************************      
