@@ -19,7 +19,7 @@ Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones, para el alf
 - Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
 ### Usuarios
-Niños, adolescentes, jóvenes y adultos
+Niños, adolescentes, jóvenes y adultos.
 
 
 ### Uso
@@ -27,22 +27,44 @@ Esta aplicación puede ser usadas en distintos contextos: generación de claves 
 
 ### Modo de empleo
 #### Codificación de mensajes
-- Seleccionar un nivel de seguridad (Se ingresa un número entero)
-- Escribir mensaje a cifrar en área de texto superior
-- Seleccionar botón **Ocultar Mensaje**
-- El mensaje cifrado aparece en el área de texto inferior
+- Seleccionar un nivel de seguridad (Se ingresa un número entero).
 
-#### Decodificación de mensajes
-- Seleccionar el nivel de seguridad (Se ingresa un número entero conocido por el usuario; número con el que se codificó el mensaje original)
-- Escribir mensaje a descifrar en área de texto superior
-- Seleccionar botón **Descubrir Mensaje**
-- Mensaje descifrado aparece en el área de texto inferior
+![Paso1_Codificar](src/images/paso1.png)
+- Escribir mensaje a cifrar en área de texto superior.
+
+![Paso2_Codificar](src/images/paso2.png)
+- Hacer click sobre botón **Ocultar Mensaje**.
+
+![Paso3_Codificar](src/images/paso3.png)
+- El mensaje cifrado aparece en el área de texto inferior.
+
+#### Descifrado de mensajes
+- Seleccionar el nivel de seguridad (Se ingresa un número entero conocido por el usuario; número con el que se codificó el mensaje original).
+
+![Paso1_Decodificar](src/images/paso1.png)
+
+- Escribir mensaje a descifrar en área de texto superior.
+
+![Paso2_Decodificar](src/images/paso4.png)
+
+- Hacer click sobre botón **Descubrir Mensaje**
+![Paso3_Decodificar](src/images/paso5.png)
+
+- El mensaje descifrado aparece en el área de texto inferior.
 
 #### Para limpiar entradas y salidas de datos en pantalla
 - Para limpiar las distintas áreas de texto de la aplicación (nivel de seguridad, input de mensaje y output de mensaje) presionar botón **Limpiar**.
 
 #### Para guardar mensaje de salida
-- Para almacenar el mensaje del área de texto inferior, presionar botón **Guardar**. Se genera archivo txt que contiene el texto guardado y el nivel de seguridad asociado.
+- Hacer click sobre botón **Guardar**.
+
+![Paso1_Guardar](src/images/paso6.png)
+
+- Hacer click sobre link que apareció en la parte inferior derecha de la pantalla.
+
+- Se genera archivo txt que contiene el texto guardado y el nivel de seguridad asociado.
+
+![Paso2_Guardar](src/images/paso7.png)
 
 *Nota: El botón* **Enviar** *se encuentra desactivado; su activación queda como una posibilidad de seguir con el aprendizaje back-end.*
 
