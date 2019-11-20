@@ -17,10 +17,10 @@ Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones, para el alf
 - Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 - Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
-### <h2> Uso
+### Uso
 Esta aplicación puede ser usadas en distintos contextos: generación de claves secretas, mensajería secreta entre personas y otros.
 
-### <h2> Modo de empleo
+### Modo de empleo
 #### Para Codificar Mensajes
 - Seleccionar un nivel de seguridad (Se ingresa un número entero)
 - Escribir mensaje a cifrar en área de texto superior
@@ -45,7 +45,7 @@ Esta aplicación puede ser usadas en distintos contextos: generación de claves 
 
 * El proyecto se dividió en 2 temáticas; UX Design y Front End Development.
 
-## - Proceso UX Design
+##      - UX Design
 Para el proceso de diseño se consideraron las siguientes etapas:
 Descubrimiento e Investigación, Síntesis y Definición, Ideación, Prototipado y User Testing. A continuación, se entrega un resumen de las actividades realizadas en cada una de las etapas del diseño del proceso mencionadas.
 
@@ -126,7 +126,7 @@ Estas pruebas, motivaron el cambio de texto en botones para entender su funciona
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab4.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab5.png)]()
 
-## Desarrollo Front-end:
+## - Desarrollo Front-end:
 ### HTML y CSS
 - Se muestran elementos de formulario en la pantalla.
 
