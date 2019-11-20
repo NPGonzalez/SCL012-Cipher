@@ -157,7 +157,7 @@ Las pruebas de esta última iteración sirvió para validar el producto final.
 [![Prototipo_Cipher_Segunda_Iteración_test5](src/images/iterUsab5.png)](https://www.loom.com/share/0167ced52e0444de843b83bdf47a635a)
 [![Prototipo_Cipher_Segunda_Iteración_test6](src/images/iterUsab6.png)](https://www.loom.com/share/352a1368654a4fca85a7b0eb663272a2)
 
-## - Desarrollo Front-end:
+## - Desarrollo Front-End:
 ### HTML y CSS
 - Se muestran elementos de formulario en la pantalla.
 
