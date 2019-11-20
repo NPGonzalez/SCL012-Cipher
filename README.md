@@ -153,7 +153,7 @@ Estas pruebas, motivaron el cambio de texto en botones para entender su funciona
 [![Prototipo_Cipher_Segunda_Iteración_test4](src/images/iterUsab4.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
 
 #### Cuarta Iteración
-Las pruebas de esta última iteración sirvió para validar el producto final.
+Las pruebas de esta última iteración sirvieron para validar el producto final.
 [![Prototipo_Cipher_Segunda_Iteración_test5](src/images/iterUsab5.png)](https://www.loom.com/share/0167ced52e0444de843b83bdf47a635a)
 [![Prototipo_Cipher_Segunda_Iteración_test6](src/images/iterUsab6.png)](https://www.loom.com/share/352a1368654a4fca85a7b0eb663272a2)
 
