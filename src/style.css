@@ -97,11 +97,11 @@ color:#5D576B;
 }
 
 #message{
-  background-color:#FDFDFF;
+background-color:#FDFDFF;
 }
 
 #resultados{
-  background-color: rgb(238, 227, 227) ;
+background-color: rgb(238, 227, 227) ;
 }
 #encodeDecodeButton{
 height: 40px;
@@ -109,29 +109,22 @@ padding-top:10px;
 margin-right:5px;
 }
 
-#cleanButton{ 
-float: right;
-height: 40px;
-margin-right: 5px;
-}
-
 .firstButton{
-  height: 35px;
-  float: right;
-  width:153px;
-  padding: 5px;
-  font-size: 15px;
-  color:#FDFDFF;  
-  background-color:#661E13;
-  border-radius: 8px;
-  margin-left:5px;
-  border:1px solid #5D576B;
+height: 35px;
+float: right;
+width:153px;
+padding: 5px;
+font-size: 15px;
+color:#FDFDFF;  
+background-color:#661E13;
+border-radius: 8px;
+margin-left:5px;
+border:1px solid #5D576B;
 }
   
 .firstButton:hover{
-
-  background-color: rgb(209, 56, 76);
- }
+background-color: rgb(209, 56, 76);
+}
 
  .secondButton{
 height: 25px;
@@ -142,10 +135,11 @@ color:#FDFDFF;
 background-color:#301137;
 border-radius: 8px;
 border:1px solid #5D576B;
-} 
+}
+
 .secondButton:hover{
-  opacity: 0.9;
-  background-color: rgb(123, 13, 138);
+opacity: 0.9;
+background-color: rgb(123, 13, 138);
  }
   
 .texts{
@@ -186,7 +180,7 @@ font-size:12px ;
 width: 100%;
 color:white;
 background-color:#5D576B;
-    }
+}
     
 
   

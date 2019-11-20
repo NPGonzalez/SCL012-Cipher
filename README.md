@@ -1,53 +1,51 @@
 # PROYECTO CIFRADO CÉSAR
-## Contexto
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+Este proyecto tiene por finalidad construir - empleando distintas herramientas UX y Front End - una aplicación de cifrado y descifrado de textos con base en el [Cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher), el cual es uno de los primeros métodos de cifrado conocidos que emplea una técnica simple de sustitución, donde cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento u offset) más adelante en el alfabeto. 
+Cabe señalar que, si bien, este cifrado no ofrece mucha seguridad por sí solo y los mensajes cifrados con este sistema pueden ser descifrados con facilidad, en la actualidad, es utilizado en otros sistemas más complejos de codificado (cifrado Vigenère, ROT13) 
 
+## Aplicación [Palabras ocultas](https://npgonzalez.github.io/SCL012-Cipher/src/index.html)
+![Aplicación](src/images/AppCipher.png)
+
+La aplicación **"Palabras ocultas"** es una aplicación web que permite al usuario cifrar y descifrar textos. 
+
+En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
+
+Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones, para el alfabeto:
 ![caeser-cipher](src/images/offsetCipher.png)
-
-El cifrado César es una técnica simple de cifrado de mensajes que se realiza por sustitución; es decir, cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento u offset) más adelante en el alfabeto. 
-
-Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones:
-
 - La letra A se cifra como D.
 - La palabra HOLA se cifra como KROD.
 - Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 - Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
-Si bien este cifrado no ofrece mucha seguridad y los mensajes cifrados con este sistema pueden ser descifrados con facilidad, en la actualidad, es utilizado en otros sistemas más complejos de codificado (cifrado Vigenère, ROT13).
-
-## Aplicación [Palabras ocultas](https://npgonzalez.github.io/SCL012-Cipher/src/index.html)
-![Aplicación](src/images/AppCipher.png)
-
-La aplicación **"Palabras ocultas"** es una aplicación web que permite al usuario cifrar y descifrar textos, utilizando el cifrado César. En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
-
-### Uso
+### <h2> Uso
 Esta aplicación puede ser usadas en distintos contextos: generación de claves secretas, mensajería secreta entre personas y otros.
 
-### Modo de empleo
+### <h2> Modo de empleo
 #### Para Codificar Mensajes
 - Seleccionar un nivel de seguridad (Se ingresa un número entero)
 - Escribir mensaje a cifrar en área de texto superior
-- Seleccionar botón **Transformar Mensaje**
+- Seleccionar botón **Ocultar Mensaje**
 - El mensaje cifrado aparece en el área de texto inferior
 
 #### Para Decodificar Mensajes
 - Seleccionar un nivel de seguridad en el que se encuentra cifrado el mensaje a descifrar (Se ingresa un número entero conocido por el usuario)
 - Escribir mensaje a descifrar en área de texto superior
-- Seleccionar botón **Recuperar Mensaje**
+- Seleccionar botón **Descubrir Mensaje**
 - Mensaje descifrado aparece en el área de texto inferior
 
 #### Para borrar mensajes 
-- Para limpiar las distintas áreas de texto de la aplición (nivel de seguridad, input de mensaje y output de mensaje) presionar botón Borrar mensaje.
+- Para limpiar las distintas áreas de texto de la aplicación (nivel de seguridad, input de mensaje y output de mensaje) presionar botón **Limpiar**.
 
 #### Para guardar mensaje de salida
-- Para almacenar el mensaje del área de texto inferior, presionar botón Guardar. Se genera archivo txt que contiene el texto guardado y el nivel de seguridad asociado.
+- Para almacenar el mensaje del área de texto inferior, presionar botón **Guardar**. Se genera archivo txt que contiene el texto guardado y el nivel de seguridad asociado.
 
-### Definición del producto
+*Nota: El botón* **Enviar** *se encuentra desactivado; su activación queda como una posibilidad de seguir con el aprendizaje back-end.*
+
+## Definición del producto
 
 * El proyecto se dividió en 2 temáticas; UX Design y Front End Development.
 
-## UX Design
+## - Proceso UX Design
 Para el proceso de diseño se consideraron las siguientes etapas:
 Descubrimiento e Investigación, Síntesis y Definición, Ideación, Prototipado y User Testing. A continuación, se entrega un resumen de las actividades realizadas en cada una de las etapas del diseño del proceso mencionadas.
 
@@ -70,28 +68,22 @@ A medida que se pudo establecer una mejor comunicación con el interlocutor, se 
 
 También, se realizaron búsquedas en Internet con el fin de revisar algunas de las aplicaciones web de codificado/decodificado existentes y sus características.
 Sitios visitados:
-- http://superpatanegra.com/texto/index.php 
+- http://superpatanegra.com/texto/index.php
 - https://www.topster.es/texto/decodieren_encodieren.html
-- https://www.convertstring.com/es/EncodeDecode/Base64Decode 
+- https://www.convertstring.com/es/EncodeDecode/Base64Decode
 
 En esta etapa de Research, como no se tenía claro el formato de la aplicación (web o de escritorio; móvil), también se revisó la aplicación móvil Decrypto.
 
-### Síntesis y Definición
+### **Síntesis y Definición**
 En esta etapa se analizó la información recolectada en la fase anerior tratando de encontrar elementos que permitieran entender las necesidades de los potenciales usurios del producto.
 
-### Ideación _ Prototipado
+### **Ideación _ Prototipado**
 ![Sketch_Prototipo_Cipher_Inicial](src/images/sketchMockupInicial.png)
 
-#### Principales Usuarios
-Los principales usuarios de este producto son adolescentes, jóvenes y adultos; todas aquellas personas que tengan la necesidad de mantener textos privados y que puedan ser leídos por ellos mismos en un momento posterior a su creación o intercambiados con otros usuarios de la aplicación.
+#### Principales Usuarios y objetivo de estos en relación con el producto 
+Los principales usuarios de este producto son adolescentes, jóvenes y adultos; todas aquellas personas que tengan la necesidad de mantener textos privados y que puedan ser leídos por ellos mismos en un momento posterior a su creación o intercambiados con otros usuarios de la aplicación. Esto se logra mediante la codificación de textos que los usuarios quieren mantener privados y decodificación, dando la posibilidad de almacenar el texto codificado para ser leído en un tiempo futuro o compartido con otros; ya que existe la opción de generar un archivo de texto que contiene el texto codificado y la clave para descifrarlo.
 
-#### Objetivos de Usuarios en relación con el produto
-Intercambiar mensajes que no sean comprensibles por otros, más que por aquellas personas que se desea que conozcan el mensaje.
-
-#### Cómo se cree que el producto está resolviendo los problemas de los usuarios
-El programa codifica y decodifica textos que los usuarios quieren mantener privados, dando la posibilidad de almacenar el texto codificado para ser leído en un tiempo futuro o compartido con otros; ya que existe la opción de generar un archivo de texto que contiene el texto codificado y la clave para descifrarlo.
-
-### Proceso de definición del producto final
+### **Proceso de definición del producto final**
 #### Interfaz de usuario (UI)
 
 La interfaz permite al usuario:
@@ -105,15 +97,34 @@ La interfaz presenta otras funcionalidades al usuario como:
 - Borrar las entradas y salidas de texto (texto a cifrar/descifrar, texto cifrado/descifrado).
 - Guardar el texto cifrado, junto con el offset en un archivo de texto a través de un link que aparece en la página.
 
-#### Funcionalidades de la aplicación requeridas
+#### Funcionalidades de la aplicación requeridas en el Proyecto
 La aplicación permite al usuario:
 - Cifrar y descifrar textos y visceversa determinado por un offset dado por el usuario, para el alfabeto simple (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z, sin Ñ). 
 - Dependiendo del offset dado por el usuario cada una de las letras es tansformada en otra letra dentro del mismo conjunto de letras mayúsculas para todos los offsets. 
 
-#### Funcionalidades de la aplicación adicionales (extra o “Hacker edition”)
+#### Funcionalidades de la aplicación adicionales (extra o “Hacker edition”) 
 * Cifra/descifra el alfabeto simple minúsculas y mayúsculas para un offset positivo o negativo.
 * Cifra/texto con offset positivo/negativo espacios, ñ, Ñ, vocales minúsculas con acento (á,é,í,ó,ú), vocales mayúsculas(Á,É,Í,Ó,Ú),ź,Ƃ,Ɔ,ƌ,Ɠ,Ś,Ţ,Ŧ,Ŭ,ų¹,Ɗ y Ū.
 * Para caracteres distintos a los mencionados anteriormente, se mantiene el caracter ingresado.
+
+### **Test de usabilidad**
+En esta sección se muestran las distintas iteraciones UX que determinaron la interfaz final, señalando en cada una de ellas los aprendizajes adquiridos. 
+
+#### Primera Iteración
+Se modificó el sketch y prototipo. Se decidió hacer una interfaz más simple, con colores que pudieran ser más apropiados para un amplio rango etario de usuarios.
+![Sketch_Cipher_Primera_Iteración](src/images/sketchCipherPrimeraIter.png)
+
+![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
+
+#### Segunda Iteración
+Esta prueba, además de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad. Se modifica CSS para no permitir al usuario redimensionar las áreas de texto.
+[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
+
+#### Tercera Iteración
+Estas pruebas, motivaron el cambio de texto en botones para entender su funcionalidad  y orientar las acciones del usurio en el uso de la aplicación.
+[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab3.png)](https://https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
+[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab4.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
+[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab5.png)]()
 
 ## Desarrollo Front-end:
 ### HTML y CSS
@@ -128,17 +139,6 @@ La aplicación permite al usuario:
 - Se Usa **control de flujo** (bucles, condicionales, ...).
 - Se **Implementan funciones** dada una descripción de su comportamiento.
 
-### Test de usabilidad
-Luego de haber realizado las pruebas de usabilidad se modificó el sketch y prototipo.
-
-![Sketch_Cipher_Primera_Iteración](src/images/sketchCipherPrimeraIter.png)
-
-![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
-
-Esta prueba además, de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad.
-[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
-
-
 ### Testing
 - Se verifica la implementación con **pruebas unitarias**.
 ![Prueba unitaria 1](src/images/testsUnitarios1.png)
@@ -152,3 +152,8 @@ Esta prueba además, de ayudar a inspeccionar elementos de usabilidad, también 
 * Visual Studio Code
 * Git
 * npm
+
+# Conclusiones
+En este proyecto se logró trabajar distintas habilidades blandas como técnicas. En las primeras destacan la comunicación y la empatía; mientras que, en las técnicas, el manejo de distintas herrramientas de desarrollo front-end.
+En relación al producto obtenido, queda abierta la posibilidad de escalamiento, en futuras iteraciones, hasta llegar a ser parte de un sistema de comunicación de mayor potencia.
+El valor agregado del producto en comparación con otros similares investigados, está en el proceso UX realizado para su construcción y la posibilidad de guar
