@@ -28,23 +28,20 @@ Esta aplicación puede ser usadas en distintos contextos: generación de claves 
 ### Modo de empleo
 #### Codificación de mensajes
 - Seleccionar un nivel de seguridad (Se ingresa un número entero).
-
 ![Paso1_Codificar](src/images/paso1.png)
-- Escribir mensaje a cifrar en área de texto superior.
 
+- Escribir mensaje a cifrar en área de texto superior.
 ![Paso2_Codificar](src/images/paso2.png)
 - Hacer click sobre botón **Ocultar Mensaje**.
-
 ![Paso3_Codificar](src/images/paso3.png)
+
 - El mensaje cifrado aparece en el área de texto inferior.
 
 #### Descifrado de mensajes
-- Seleccionar el nivel de seguridad (Se ingresa un número entero conocido por el usuario; número con el que se codificó el mensaje original).
-
+- Seleccionar el nivel de seguridad (Se ingresa un número entero conocido por el usuario; número con el que se codificó el mensaje original). 
 ![Paso1_Decodificar](src/images/paso1.png)
 
 - Escribir mensaje a descifrar en área de texto superior.
-
 ![Paso2_Decodificar](src/images/paso4.png)
 
 - Hacer click sobre botón **Descubrir Mensaje**
@@ -53,17 +50,16 @@ Esta aplicación puede ser usadas en distintos contextos: generación de claves 
 - El mensaje descifrado aparece en el área de texto inferior.
 
 #### Para limpiar entradas y salidas de datos en pantalla
-- Para limpiar las distintas áreas de texto de la aplicación (nivel de seguridad, input de mensaje y output de mensaje) presionar botón **Limpiar**.
+- Hacer click sobre botón **Limpiar**.
+- Desaparece datos de nivel de seguridad, y áreas de texto. 
 
 #### Para guardar mensaje de salida
 - Hacer click sobre botón **Guardar**.
-
 ![Paso1_Guardar](src/images/paso6.png)
 
 - Hacer click sobre link que apareció en la parte inferior derecha de la pantalla.
 
 - Se genera archivo txt que contiene el texto guardado y el nivel de seguridad asociado.
-
 ![Paso2_Guardar](src/images/paso7.png)
 
 *Nota: El botón* **Enviar** *se encuentra desactivado; su activación queda como una posibilidad de seguir con el aprendizaje back-end.*
