@@ -147,16 +147,15 @@ Esta prueba, además de ayudar a inspeccionar elementos de usabilidad, también 
 
 [![Prototipo_Cipher_Segunda_Iteración_test2](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
 
-En esta prueba se pudo observar y comparar las distintas reacciones del usuario al utilizar la aplicación.
-
-[![Prototipo_Cipher_Segunda_Iteración_test3](src/images/iterUsab3.png)](https://www.loom.com/share/ef766088bc5f4835a48ad9d8f724d99b)
-
 #### Tercera Iteración
 Estas pruebas, motivaron el cambio de texto en botones para entender su funcionalidad  y orientar las acciones del usurio en el uso de la aplicación.
-[![Prototipo_Cipher_Segunda_Iteración_test4](src/images/iterUsab4.png)](https://https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
-[![Prototipo_Cipher_Segunda_Iteración_test5](src/images/iterUsab5.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
+[![Prototipo_Cipher_Segunda_Iteración_test3](src/images/iterUsab3.png)](https://https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
+[![Prototipo_Cipher_Segunda_Iteración_test4](src/images/iterUsab4.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
 
-
+#### Cuarta Iteración
+Las pruebas de esta última iteración sirvió para validar el producto final.
+[![Prototipo_Cipher_Segunda_Iteración_test5](src/images/iterUsab5.png)](https://www.loom.com/share/0167ced52e0444de843b83bdf47a635a)
+[![Prototipo_Cipher_Segunda_Iteración_test6](src/images/iterUsab6.png)](https://www.loom.com/share/352a1368654a4fca85a7b0eb663272a2)
 
 ## - Desarrollo Front-end:
 ### HTML y CSS
