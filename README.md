@@ -149,7 +149,7 @@ Esta prueba, además de ayudar a inspeccionar elementos de usabilidad, también 
 
 #### Tercera Iteración
 Estas pruebas, motivaron el cambio de texto en botones para entender su funcionalidad  y orientar las acciones del usurio en el uso de la aplicación.
-[![Prototipo_Cipher_Segunda_Iteración_test3](src/images/iterUsab3.png)](https://https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
+[![Prototipo_Cipher_Segunda_Iteración_test3](src/images/iterUsab3.png)](https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
 [![Prototipo_Cipher_Segunda_Iteración_test4](src/images/iterUsab4.png)](https://www.loom.com/share/7b25da726bfc40d3bf1838d35483b0eb)
 
 #### Cuarta Iteración
