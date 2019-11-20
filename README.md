@@ -1,7 +1,7 @@
 # PROYECTO CIFRADO CÉSAR
 
 Este proyecto tiene por finalidad construir - empleando distintas herramientas UX y Front End - una aplicación de cifrado y descifrado de textos con base en el [Cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher), el cual es uno de los primeros métodos de cifrado conocidos que emplea una técnica simple de sustitución, donde cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento u offset) más adelante en el alfabeto. 
-Cabe señalar que, si bien, este cifrado no ofrece mucha seguridad por sí solo y los mensajes cifrados con este sistema pueden ser descifrados con facilidad, en la actualidad, es utilizado en otros sistemas más complejos de codificado (cifrado Vigenère, ROT13) 
+Cabe señalar que, si bien este cifrado no ofrece mucha seguridad por sí solo y los mensajes cifrados con este sistema pueden ser descifrados con facilidad, en la actualidad, es utilizado en otros sistemas más complejos de codificado (cifrado Vigenère, ROT13) 
 
 ## Aplicación [Palabras ocultas](https://npgonzalez.github.io/SCL012-Cipher/src/index.html)
 ![Aplicación](src/images/AppCipher.png)
