@@ -136,7 +136,7 @@ Luego de haber realizado las pruebas de usabilidad se modificó el sketch y prot
 
 ![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
 
-[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76).
+[![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
 
 Esta prueba además, de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad.
 
