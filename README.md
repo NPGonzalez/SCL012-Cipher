@@ -111,9 +111,8 @@ La aplicación permite al usuario:
 - Dependiendo del offset dado por el usuario cada una de las letras es tansformada en otra letra dentro del mismo conjunto de letras mayúsculas para todos los offsets. 
 
 #### Funcionalidades de la aplicación adicionales (extra o “Hacker edition”)
-* Cifra/descifra el alfabeto simple minúsculas para un offset positivo o negativo.
-* Cifra/texto con offset positivo/negativo espacios, ñ, Ñ, vocales minúsculas con acento (á,é,í,ó,ú), vocales mayúsculas(Á,É,Í,Ó,Ú),±,¹ y ².
-* Cifra/descifra otros caracteres como: espacios, ñ, Ñ, á, é,í,ó,ú, Á,É,Í,Ó,Ú, para desplazamientos positivos o negativos.
+* Cifra/descifra el alfabeto simple minúsculas y mayúsculas para un offset positivo o negativo.
+* Cifra/texto con offset positivo/negativo espacios, ñ, Ñ, vocales minúsculas con acento (á,é,í,ó,ú), vocales mayúsculas(Á,É,Í,Ó,Ú),ź,Ƃ,Ɔ,ƌ,Ɠ,Ś,Ţ,Ŧ,Ŭ,ų¹,Ɗ y Ū.
 * Para caracteres distintos a los mencionados anteriormente, se mantiene el caracter ingresado.
 
 ## Desarrollo Front-end:
@@ -136,16 +135,13 @@ Luego de haber realizado las pruebas de usabilidad se modificó el sketch y prot
 
 ![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
 
+Esta prueba además, de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad.
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
 
-Esta prueba además, de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad.
 
 ### Testing
 - Se verifica la implementación con **pruebas unitarias**.
 ![Prueba unitaria 1](src/images/testsUnitarios1.png)
-
-
-
 
 ## Herramientas empleadas
 ### UX
