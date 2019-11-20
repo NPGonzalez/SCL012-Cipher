@@ -11,29 +11,34 @@ La aplicación **"Palabras ocultas"** es una aplicación web que permite al usua
 En esta, el valor de desplazamiento (offset) es seleccionado por el usuario pudiendo elevar el grado de seguridad de la codificación mediante un offset que puede tomar números tanto positivos como negativos. En el caso de seleccionar el cero, el texto a cifrar/descifrar queda escrito con sus caracteres originales.
 
 Por ejemplo, si se usa un desplazamiento (_offset_) de 3 posiciones, para el alfabeto:
+
 ![caeser-cipher](src/images/offsetCipher.png)
 - La letra A se cifra como D.
 - La palabra HOLA se cifra como KROD.
 - Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 - Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
+### Usuarios
+Niños, adolescentes, jóvenes y adultos
+
+
 ### Uso
 Esta aplicación puede ser usadas en distintos contextos: generación de claves secretas, mensajería secreta entre personas y otros.
 
 ### Modo de empleo
-#### Para Codificar Mensajes
+#### Codificación de mensajes
 - Seleccionar un nivel de seguridad (Se ingresa un número entero)
 - Escribir mensaje a cifrar en área de texto superior
 - Seleccionar botón **Ocultar Mensaje**
 - El mensaje cifrado aparece en el área de texto inferior
 
-#### Para Decodificar Mensajes
-- Seleccionar un nivel de seguridad en el que se encuentra cifrado el mensaje a descifrar (Se ingresa un número entero conocido por el usuario)
+#### Decodificación de mensajes
+- Seleccionar el nivel de seguridad (Se ingresa un número entero conocido por el usuario; número con el que se codificó el mensaje original)
 - Escribir mensaje a descifrar en área de texto superior
 - Seleccionar botón **Descubrir Mensaje**
 - Mensaje descifrado aparece en el área de texto inferior
 
-#### Para borrar mensajes 
+#### Para limpiar entradas y salidas de datos en pantalla
 - Para limpiar las distintas áreas de texto de la aplicación (nivel de seguridad, input de mensaje y output de mensaje) presionar botón **Limpiar**.
 
 #### Para guardar mensaje de salida
@@ -81,7 +86,7 @@ En esta etapa se analizó la información recolectada en la fase anerior tratand
 ![Sketch_Prototipo_Cipher_Inicial](src/images/sketchMockupInicial.png)
 
 #### Principales Usuarios y objetivo de estos en relación con el producto 
-Los principales usuarios de este producto son adolescentes, jóvenes y adultos; todas aquellas personas que tengan la necesidad de mantener textos privados y que puedan ser leídos por ellos mismos en un momento posterior a su creación o intercambiados con otros usuarios de la aplicación. Esto se logra mediante la codificación de textos que los usuarios quieren mantener privados y decodificación, dando la posibilidad de almacenar el texto codificado para ser leído en un tiempo futuro o compartido con otros; ya que existe la opción de generar un archivo de texto que contiene el texto codificado y la clave para descifrarlo.
+Los principales usuarios de este producto son todas aquellas personas que tengan la necesidad de escribir y mantener textos privados, que puedan ser leídos por ellos mismos en un momento posterior a su creación o intercambiados con otros usuarios de la aplicación. Esto se logra mediante la codificación de textos que los usuarios quieren mantener privados y decodificación, dando la posibilidad de almacenar el texto codificado para ser leído en un tiempo futuro o compartido con otros; ya que existe la opción de generar un archivo de texto que contiene el texto codificado y la clave para descifrarlo.
 
 ### **Proceso de definición del producto final**
 #### Interfaz de usuario (UI)
@@ -108,19 +113,26 @@ La aplicación permite al usuario:
 * Para caracteres distintos a los mencionados anteriormente, se mantiene el caracter ingresado.
 
 ### **Test de usabilidad**
-En esta sección se muestran las distintas iteraciones UX que determinaron la interfaz final, señalando en cada una de ellas los aprendizajes adquiridos. 
+En esta sección se muestran las distintas iteraciones UX que determinaron la interfaz final del producto, señalando en cada una de ellas los aprendizajes adquiridos. 
 
 #### Primera Iteración
-Se modificó el sketch y prototipo. Se decidió hacer una interfaz más simple, con colores que pudieran ser más apropiados para un amplio rango etario de usuarios.
+A partir de la primera prueba de usabilidad, se modificó el sketch y prototipo. Se decidió hacer una interfaz más simple, con colores que pudieran ser más apropiados para un amplio rango etario de usuarios.
+
 ![Sketch_Cipher_Primera_Iteración](src/images/sketchCipherPrimeraIter.png)
 
 ![Prototipo_Cipher_Primera_Iteración](src/images/MockupCipherPrimeraIter.png)
 
+*Nota: En esta prueba se entrevistó a usuario pero no se registró evidencia de entrevista.*
+
 #### Segunda Iteración
 Esta prueba, además de ayudar a inspeccionar elementos de usabilidad, también permitió detectar algunos problemas de funcionalidad. Se modifica CSS para no permitir al usuario redimensionar las áreas de texto.
+
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab2.png)](https://www.loom.com/share/5a2131221a204057a2a3d786f1332f76)
-En esta prueba tuve la posibilidad de comparar las distintas reacciones del usuario al utilizar la aplicación.
+
+En esta prueba se pudo observar y comparar las distintas reacciones del usuario al utilizar la aplicación.
+
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab3.png)](https://www.loom.com/share/ef766088bc5f4835a48ad9d8f724d99b)
+
 #### Tercera Iteración
 Estas pruebas, motivaron el cambio de texto en botones para entender su funcionalidad  y orientar las acciones del usurio en el uso de la aplicación.
 [![Prototipo_Cipher_Segunda_Iteración](src/images/iterUsab4.png)](https://https://www.loom.com/share/40dcde6f50c34c62a76b3bf6aadd2df6)
