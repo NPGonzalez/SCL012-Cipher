@@ -187,4 +187,4 @@ Las pruebas de esta última iteración sirvieron para validar el producto final.
 # Conclusiones
 En este proyecto se logró trabajar distintas habilidades blandas como técnicas. En las primeras destacan la comunicación y la empatía; mientras que, en las técnicas, el manejo de distintas herrramientas de desarrollo front-end.
 En relación al producto obtenido, queda abierta la posibilidad de escalamiento, en futuras iteraciones, hasta llegar a ser parte de un sistema de comunicación de mayor potencia.
-El valor agregado del producto en comparación con otros similares investigados, está en el proceso UX realizado para su construcción y la posibilidad de guar
+El valor agregado del producto en comparación con otros similares investigados, está en el proceso UX realizado para su construcción y la posibilidad de guardar el texto cifrado y su nivel de seguridad
