@@ -2,8 +2,14 @@
 margin:0;
 padding:0;
 }
-  
-body{  
+
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+
+  body{  
 background-color:whitesmoke;
 font-family:verdana;
 color:#5D576B;  
@@ -144,7 +150,7 @@ background-color: rgb(123, 13, 138);
   
 .texts{
 height: 5rem;
-width: 100%;
+width: 20%;
 background-color:rgb(238, 227, 227);
 border-radius:8px;
 padding:10px;
